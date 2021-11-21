@@ -1,13 +1,18 @@
 {
-    "idleHeartbeats": 1804,
-    "navigatingHeartbeats": 127,
-    "totalCodingHeartbeats": 1629,
+    "idleHeartbeats": 13374,
+    "navigatingHeartbeats": 1252,
+    "totalCodingHeartbeats": 15597,
     "languageHeartbeats": {
-        "html": 499,
-        "css": 1130
+        "html": 6588,
+        "css": 8872,
+        "plaintext": 45,
+        "scminput": 92
     },
     "fileHeartbeats": {
-        "index.html": 499,
-        "style.css": 1130
+        "index.html": 6588,
+        "style.css": 8781,
+        "/Users/cristinamalmiercasalvador/coding/Proyectos/Geekshubs_APP_Mensajeria/index.html.git": 45,
+        "scm/git/scm0/input": 92,
+        "imagenes/icomoon/style.css": 91
     }
 }

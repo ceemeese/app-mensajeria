@@ -1,20 +1,168 @@
 html, body { 
-    height:100%; 
-    margin:0;
-    padding:0;
+  height:100%; 
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;;
+  background-color: whitesmoke;
+  font-size: 15px;
+}
+
+.flex-container {
+  display:flex;
+  flex-direction: row;
+  min-height:100%;
+}
+
+.flex-container > div {
+  display:flex;
+  flex-direction: column;
+}
+
+.fila0 { 
+  background:grey;
+  flex-basis: 350px; 
+  color: white;
+  }
+
+  i {
+  margin-left: 1em;
+  }
+
+  h2 {
+  margin-left: 1em;
   }
   
-  .flex-container {
-    display:flex;
-    flex-direction: row;
-    min-height:100%;
-  }
-  
-  .flex-container > div {
-    display:flex;
-  }
-  
-  .fila0 { 
-    background:#91E7C6;
-    flex-basis: 350px }
-  .fila1 { background:whitesmoke }
+.workspace { 
+  color: black;
+  flex-basis: 100%; 
+  background: whitesmoke;
+  position: relative;
+}
+
+.heading {
+  display: flex;
+  padding: 0px 19px 0px 16px;
+  border-bottom: 1px solid white;
+}
+
+.icon-bell-o:before {
+  content: "\e900";
+  font-size: 17px;
+}
+
+.icon-plus-circle:before {
+  content: "\e901";
+  font-size: 13px;
+}
+
+.channels-sidebar {
+  margin-top: 15px;
+  padding-left: 16px;
+  align-items: center;
+  height: 28px;
+}
+
+.messages-sidebar {
+  padding-left: 16px;
+  align-items: center;
+  height: 28px;
+}
+
+.channels {
+  margin-right: auto;
+}
+
+.direct-messages {
+  margin-right: auto;
+}
+
+.header-view-workspace {
+  border-bottom: 1px solid grey;
+}
+
+
+/*Contenido del Cuadro de Mensaje */
+.sticky-container {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  height: 500px;
+}
+
+.panel-view-message-workspace {
+  padding: 8px 20px;
+  height: 500px;
+}
+
+.content-message {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 8px;
+  padding-left: 16px;
+  margin: -12px -8px -16px -16px;
+  height: 500px;
+}
+
+.sender {
+  font-weight:bold;
+}
+
+.timestamp{
+  font-size: 12px;
+}
+
+.messages {
+  font-weight: lighter;
+}
+
+/*Elementos de envío de mensaje*/
+.footer-workspace {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+
+.panel-input {
+  display: flex;
+  padding: 0px 20px;
+  flex: 1px;
+  box-sizing: inherit;
+}
+
+.container-send {
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  border-radius: 4px;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.editor {
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  width: 100%;
+}
+
+.editor {
+  cursor: text;
+  box-sizing: border-box;
+  overflow-y: auto;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.placeholder {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: scroll;
+  white-space: nowrap;
+}
+

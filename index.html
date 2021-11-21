@@ -4,16 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/imagenes/icomoon/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
+    
     <title>APP Mensajería</title>
     
 </head>
 <body>
 <div class="flex-container">
-    <div class="fila0"></div>
-    <div class="fila1"></div>
+    <div class="fila0">
+        <div class="heading" class="fila0"><h2>Reto GeeksHubs</h2></h2></div>
+        <div class="channels-sidebar" class="fila0" >
+            <i class="icon-plus-circle"></i>
+            <span class="channels">Channels</span>
+        </div>
+        <div class="messages-sidebar" class="fila0">
+            <i class="icon-plus-circle"></i>
+            <span class="direct-messages">Direct Messages</span>
+        </div>
+    </div>
+    <div class="workspace">
+        <div class="header-view-workspace"><h2 id="header">#general</h2></div>  
+        <div class="sticky container">
+            <div class="panel-view-message-workspace">
+                <div class="content-message">
+                    <span class="sender">sender</span>
+                    <a class="timestamp">(Fecha y hora)</a>
+                    <br>
+                    <span class="messages">Hola! ¿Qué tal?</span>
+                </div>
+            </div>
+        </div>
+     
+        <div class="footer-workspace">
+            <div class="panel-input">
+                <div class="container-send">
+                    <div class="editor">
+                        <div class="placeholder">Enviar mensaje </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </div>
 
 </body>
